@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Điện thoại iPhone 13 Pro Max 128GB ver 1",
+    "price": "44000000",
+    "screen": "OLED6.7\"Super Retina XDR",
+    "backCamera": "3 camera 12 MP",
+    "frontCamera": "12 MP",
+    "img": "https://cdn.tgdd.vn/Products/Images/42/230529/iphone-13-pro-max-1-2.jpg",
+    "desc": "1 Nano SIM & 1 eSIMHỗ trợ 5G",
+    "type": "iPhone",
+    "id": "2",
+    "quantity": "70"
+  },
+  {
+    "name": "Điện thoại iPhone 13 Pro Max 128GB ver 2",
+    "price": "44000000",
+    "screen": "OLED6.7\"Super Retina XDR",
+    "backCamera": "3 camera 12 MP",
+    "frontCamera": "12 MP",
+    "img": "https://cdn.tgdd.vn/Products/Images/42/230529/iphone-13-pro-max-1-2.jpg",
+    "desc": "1 Nano SIM & 1 eSIMHỗ trợ 5G",
+    "type": "iPhone",
+    "id": "3",
+    "quantity": "71"
+  },
+  {
+    "name": "Điện thoại iPhone 13 Pro Max 128GB ver 3",
+    "price": "44000000",
+    "screen": "OLED6.7\"Super Retina XDR",
+    "backCamera": "3 camera 12 MP",
+    "frontCamera": "12 MP",
+    "img": "https://cdn.tgdd.vn/Products/Images/42/230529/iphone-13-pro-max-1-2.jpg",
+    "desc": "1 Nano SIM & 1 eSIMHỗ trợ 5G",
+    "type": "iPhone",
+    "id": "4",
+    "quantity": "68"
+  },
+  {
+    "name": "Samsung Galaxy Z Fold3 5G 256GB",
+    "price": "42990000",
+    "screen": "Dynamic AMOLED 2XChính 7.6\" & Phụ 6.2\"Full HD+",
+    "backCamera": "3 camera 12 MP",
+    "frontCamera": "10 MP & 4 MP",
+    "img": "https://cdn.tgdd.vn/Products/Images/42/226935/samsung-galaxy-z-fold-3-den-1.jpg",
+    "desc": "Galaxy Z Fold3 5G, chiếc điện thoại được nâng cấp toàn diện về nhiều mặt, đặc biệt đây là điện thoại màn hình gập đầu tiên trên thế giới có camera ẩn (08/2021). Sản phẩm sẽ là một “cú hit” của Samsung góp phần mang đến những trải nghiệm mới cho người dùng.",
+    "type": "Samsung",
+    "id": "5",
+    "quantity": "152"
+  },
+  {
+    "name": "Điện thoại Samsung Galaxy A52s 5G 128GB",
+    "price": "10990000",
+    "screen": "Super AMOLED6.5\"Full HD+",
+    "backCamera": "Chính 64 MP & Phụ 12 MP, 5 MP, 5 MP",
+    "frontCamera": "32 MP",
+    "img": "https://cdn.tgdd.vn/Products/Images/42/247507/samsung-galaxy-a52s-5g-1-4.jpg",
+    "desc": "Samsung đã chính thức giới thiệu chiếc điện thoại Galaxy A52s 5G đến người dùng, đây phiên bản nâng cấp của Galaxy A52 5G ra mắt cách đây không lâu, với ngoại hình không đổi nhưng được nâng cấp đáng kể về thông số cấu hình bên trong.",
+    "type": "Samsung",
+    "id": "6",
+    "quantity": "127"
+  },
+  {
+    "name": "Iphone 13",
+    "price": "15000000",
+    "screen": "6.1 inches",
+    "backCamera": "\tCamera góc rộng: 12MP, f/1.6. Camera góc siêu rộng: 12MP, ƒ/2.4",
+    "frontCamera": "12MP, f/2.2",
+    "img": "https://cdn.hoanghamobile.com/i/preview/Uploads/2021/09/15/image-removebg-preview-12.png",
+    "desc": "Thiết kế đột phá, màn hình tuyệt đỉnh",
+    "type": "Iphone",
+    "id": "7",
+    "quantity": "50"
+  },
+  {
+    "name": "Iphone 13",
+    "price": "900",
+    "screen": "OLED 6.1 inches",
+    "backCamera": "Camera góc rộng: 12MP, f/1.6. Camera góc siêu rộng: 12MP, ƒ/2.4",
+    "frontCamera": "12MP, f/2.2",
+    "img": "https://cdn.hoanghamobile.com/i/preview/Uploads/2021/09/15/image-removebg-preview-12.png",
+    "desc": "Thiết kế đột phá, màn hình tuyệt đỉnh",
+    "type": "Iphone",
+    "id": "8",
+    "quantity": "40"
+  }
+]
