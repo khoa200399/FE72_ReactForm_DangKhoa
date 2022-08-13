@@ -6,7 +6,7 @@ import * as yup from "yup";
 import isEmpty from "lodash.isempty";
 
 const userSchema = yup.object().shape({
-  username: yup.string().required("*Vui lòng nhập"),
+  username: yup.string().required("*Vui lòng nhập").matches(/^[a-zA-Z]/,"*Nhập kí tự chữ"),
   password: yup.string().required("*Vui lòng nhập").min(8, "*Nhập ít nhất 8 kí tự").max(16, "*Nhập tối đa 16 kí tự"),
   name: yup.string().required("*Vui lòng nhập").matches(/[a-zA-Z_ÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ]/, "*Chỉ được nhập chữ"),
   email: yup.string().matches(/^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$/, "*Vui lòng nhập email!"),

@@ -5,12 +5,12 @@ import Form from "./Form";
 import UserList from "./UserList";
 
 function Home() {
-  const [userList, setUserList] = useState([{ email: "dangkhoa200399@gmail.com", id: 272, name: "Nguyễn Huỳnh Đăng Khoa", password: "admin131323", phone: "0988379752", role: "quanTri", username: "admin@gmail.com" },
-  { email: "minh1234@gmail.com", id: 273, name: "Nguyễn Huỳnh Đăng Minh", password: "admin131323", phone: "0123456789", role: "quanTri", username: "minh123@gmail.com" }]);
-  const [searchResult, setSearchResult] = useState([{ email: "dangkhoa200399@gmail.com", id: 272, name: "Nguyễn Huỳnh Đăng Khoa", password: "admin131323", phone: "0988379752", role: "quanTri", username: "admin@gmail.com" },
-  { email: "minh1234@gmail.com", id: 273, name: "Nguyễn Huỳnh Đăng Minh", password: "admin131323", phone: "0123456789", role: "quanTri", username: "minh123@gmail.com" }]);
+  const [userList, setUserList] = useState([{ email: "dangkhoa200399@gmail.com", id: 272, name: "Nguyễn Huỳnh Đăng Khoa", password: "admin131323", phone: "0988379752", role: "quanTri", username: "admin" },
+  { email: "minh1234@gmail.com", id: 273, name: "Nguyễn Huỳnh Đăng Minh", password: "admin131323", phone: "0123456789", role: "quanTri", username: "minh123" }]);
+  const [searchResult, setSearchResult] = useState([]);
   const [selectedUser, setSelectedUser] = useState(null)
-
+  const [isSearch, setIsSearch] = useState(false);
+  
   function createUser(user) {
     const foundUser = userList.find((item) => {
       return item.username === user.username;
@@ -47,26 +47,27 @@ function Home() {
   }
 
   const handleSearch = (searchInput) => {
-    let inputS = searchInput.target.value.trim().toLowerCase();
     const cloneListSearch = [...userList];
+    let inputS = searchInput.target.value.trim().toLowerCase();
+    if(inputS === '') return setIsSearch(false);
+
+    setIsSearch(true);
     const foundEmail = cloneListSearch.filter(item => item.email.toLowerCase().includes(inputS))
     const foundName = cloneListSearch.filter(item => item.name.toLowerCase().includes(inputS))
     const foundUserName = cloneListSearch.filter(item => item.username.toLowerCase().includes(inputS))
     const foundNumber = cloneListSearch.filter(item => item.phone.includes(inputS))
-    console.log(foundNumber)
     
     if(!isEmpty(foundEmail)) return setSearchResult(foundEmail);
     if(!isEmpty(foundName)) return setSearchResult(foundName);
     if(!isEmpty(foundUserName)) return setSearchResult(foundUserName);
     if(!isEmpty(foundNumber)) return setSearchResult(foundNumber);
-     
   }
 
   return (
     <div>
       <h1>Quản Lý User</h1>
       <Form selectedUser={selectedUser} createUser={createUser} updateUser={updateUser} />
-      <UserList searchUser={handleSearch} users={searchResult} deleteUser={deleteUser} editUser={getUpdateUser} />
+      <UserList searchUser={handleSearch} users={isSearch ? searchResult : userList} deleteUser={deleteUser} editUser={getUpdateUser} />
     </div>
   );
 }
